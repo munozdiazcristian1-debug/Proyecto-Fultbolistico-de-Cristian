@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML y CSS con todos los elementos">
+    <meta name="keywords" content="HTML, CSS, formularios, tablas, listas, enlaces, imágenes">
+    <meta name="author" content="Cristian">
+    <title>Clasificación Liga Española 2025/2026</title>
+<style>
+  /*Los encabezados y sus decoraciones*/
+  h1 {
+    text-align: center;
+    color: #00a2a2;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  th {
+    background: #00a2a2;
+    color: white;
+  }
+
+  .team {
+    text-align: left;
+    padding-left: 12px;
+  }
+
+  tr:hover {
+    background: #f1f1f1;
+  }
+
+  /* Colores por competición */
+  .champions { background: #c3e6ff; }  
+  .europa    { background: #d9f7c7; }  
+  .descenso  { background: #ffc3c3; }  
+
+  .legend span {
+    padding: 5px 10px;
+    font-weight: bold;
+  }
+
+  .back-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00a2a2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 1450px;
+    text-align: center;
+  }
+
+  .back-button:hover {
+    background-color: #007272;
+  }
+
+  /* Tabla anidada */
+  .nested-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+  }
+
+  .nested-table td {
+    border: 1px solid #ddd;
+    font-size: 12px;
+    padding: 3px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00a2a2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 1450px;
+    text-align: center;
+  }
+
+  .back-button:hover {
+    background-color: #007272;
+  }
+</style>
+</head>
+<body>
+<h1>Clasificación Liga Española 2025/2026</h1>
+<!--Tabla de la clasificación-->
+<table>
+    <tr>
+      <th>Pos</th>
+      <th>Equipo</th>
+      <th>GF</th>
+      <th>GC</th>
+      <th>DG</th>
+      <th>Puntos</th>
+    </tr>
+  <body>
+    <tr class="champions">
+      <td>1</td>
+      <td class="team">
+        Real Madrid
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>13</td></tr>
+          <tr><td>PE</td><td>3</td></tr>
+          <tr><td>PP</td><td>2</td></tr>
+        </table>
+      </td>
+      <td>40</td>
+      <td>15</td>
+      <td>25</td>
+      <td>42</td>
+    </tr>
+
+    <tr class="champions">
+      <td>2</td>
+      <td class="team">
+        Barcelona
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>12</td></tr>
+          <tr><td>PE</td><td>4</td></tr>
+          <tr><td>PP</td><td>2</td></tr>
+        </table>
+      </td>
+      <td>38</td>
+      <td>17</td>
+      <td>21</td>
+      <td>40</td>
+    </tr>
+
+    <tr class="champions">
+      <td>3</td>
+      <td class="team">
+        Atlético de Madrid
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>10</td></tr>
+          <tr><td>PE</td><td>5</td></tr>
+          <tr><td>PP</td><td>3</td></tr>
+        </table>
+      </td>
+      <td>30</td>
+      <td>16</td>
+      <td>14</td>
+      <td>35</td>
+    </tr>
+
+    <tr class="champions">
+      <td>4</td>
+      <td class="team">
+        Villarreal
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>9</td></tr>
+          <tr><td>PE</td><td>6</td></tr>
+          <tr><td>PP</td><td>3</td></tr>
+        </table>
+      </td>
+      <td>28</td>
+      <td>18</td>
+      <td>10</td>
+      <td>33</td>
+    </tr>
+
+    <tr class="europa">
+      <td>5</td>
+      <td class="team">
+        Real Sociedad
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>8</td></tr>
+          <tr><td>PE</td><td>5</td></tr>
+          <tr><td>PP</td><td>5</td></tr>
+        </table>
+      </td>
+      <td>27</td>
+      <td>20</td>
+      <td>7</td>
+      <td>29</td>
+    </tr>
+
+    <tr class="europa">
+      <td>6</td>
+      <td class="team">
+        Real Betis
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>8</td></tr>
+          <tr><td>PE</td><td>4</td></tr>
+          <tr><td>PP</td><td>6</td></tr>
+        </table>
+      </td>
+      <td>26</td>
+      <td>22</td>
+      <td>4</td>
+      <td>28</td>
+    </tr>
+
+    <tr class="europa">
+      <td>7</td>
+      <td class="team">
+        Athletic Bilbao
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>7</td></tr>
+          <tr><td>PE</td><td>5</td></tr>
+          <tr><td>PP</td><td>6</td></tr>
+        </table>
+      </td>
+      <td>25</td>
+      <td>21</td>
+      <td>4</td>
+      <td>26</td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td class="team">
+        Celta de Vigo
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>7</td></tr>
+          <tr><td>PE</td><td>4</td></tr>
+          <tr><td>PP</td><td>7</td></tr>
+        </table>
+      </td>
+      <td>22</td>
+      <td>23</td>
+      <td>-1</td>
+      <td>25</td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td class="team">
+        Sevilla
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>6</td></tr>
+          <tr><td>PE</td><td>6</td></tr>
+          <tr><td>PP</td><td>6</td></tr>
+        </table>
+      </td>
+      <td>24</td>
+      <td>23</td>
+      <td>1</td>
+      <td>24</td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td class="team">
+        Getafe
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>6</td></tr>
+          <tr><td>PE</td><td>5</td></tr>
+          <tr><td>PP</td><td>7</td></tr>
+        </table>
+      </td>
+      <td>21</td>
+      <td>24</td>
+      <td>-3</td>
+      <td>23</td>
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td class="team">
+        Mallorca
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>6</td></tr>
+          <tr><td>PE</td><td>4</td></tr>
+          <tr><td>PP</td><td>8</td></tr>
+        </table>
+      </td>
+      <td>19</td>
+      <td>25</td>
+      <td>-6</td>
+      <td>22</td>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td class="team">
+        Espanyol
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>5</td></tr>
+          <tr><td>PE</td><td>6</td></tr>
+          <tr><td>PP</td><td>7</td></tr>
+        </table>
+      </td>
+      <td>18</td>
+      <td>26</td>
+      <td>-8</td>
+      <td>21</td>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td class="team">
+        Granada
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>5</td></tr>
+          <tr><td>PE</td><td>5</td></tr>
+          <tr><td>PP</td><td>8</td></tr>
+        </table>
+      </td>
+      <td>17</td>
+      <td>27</td>
+      <td>-10</td>
+      <td>20</td>
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td class="team">
+        Rayo Vallecano
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>5</td></tr>
+          <tr><td>PE</td><td>4</td></tr>
+          <tr><td>PP</td><td>9</td></tr>
+        </table>
+      </td>
+      <td>16</td>
+      <td>28</td>
+      <td>-12</td>
+      <td>19</td>
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td class="team">
+        Almería
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>5</td></tr>
+          <tr><td>PE</td><td>3</td></tr>
+          <tr><td>PP</td><td>10</td></tr>
+        </table>
+      </td>
+      <td>15</td>
+      <td>29</td>
+      <td>-14</td>
+      <td>18</td>
+    </tr>
+
+    <tr>
+      <td>16</td>
+      <td class="team">
+        Osasuna
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>4</td></tr>
+          <tr><td>PE</td><td>4</td></tr>
+          <tr><td>PP</td><td>10</td></tr>
+        </table>
+      </td>
+      <td>14</td>
+      <td>30</td>
+      <td>-16</td>
+      <td>16</td>
+    </tr>
+
+    <tr>
+      <td>17</td>
+      <td class="team">
+        Córdoba
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>3</td></tr>
+          <tr><td>PE</td><td>5</td></tr>
+          <tr><td>PP</td><td>10</td></tr>
+        </table>
+      </td>
+      <td>13</td>
+      <td>31</td>
+      <td>-18</td>
+      <td>14</td>
+    </tr>
+
+    <tr class="descenso">
+      <td>18</td>
+      <td class="team">
+        Elche
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>2</td></tr>
+          <tr><td>PE</td><td>6</td></tr>
+          <tr><td>PP</td><td>10</td></tr>
+        </table>
+      </td>
+      <td>12</td>
+      <td>32</td>
+      <td>-20</td>
+      <td>12</td>
+    </tr>
+
+    <tr class="descenso">
+      <td>19</td>
+      <td class="team">
+        Levante
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>2</td></tr>
+          <tr><td>PE</td><td>5</td></tr>
+          <tr><td>PP</td><td>11</td></tr>
+        </table>
+      </td>
+      <td>11</td>
+      <td>33</td>
+      <td>-22</td>
+      <td>11</td>
+    </tr>
+
+    <tr class="descenso">
+      <td>20</td>
+      <td class="team">
+        Girona
+        <table class="nested-table">
+          <tr><td>PJ</td><td>18</td></tr>
+          <tr><td>PG</td><td>1</td></tr>
+          <tr><td>PE</td><td>4</td></tr>
+          <tr><td>PP</td><td>13</td></tr>
+        </table>
+      </td>
+      <td>9</td>
+      <td>35</td>
+      <td>-26</td>
+      <td>7</td>
+    </tr>
+
+  </tbody>
+</table>
+<!--Leyenda-->
+<div class="legend">
+  <span class="champions">Champions League (1-4)</span>
+  <span class="europa">Europa League / Conference (5-7)</span>
+  <span class="descenso">Zona de Descenso (18-20)</span>
+</div><br>
+
+<a href="index.html" class="back-button">Volver a Inicio</a>
+
+
+</html>

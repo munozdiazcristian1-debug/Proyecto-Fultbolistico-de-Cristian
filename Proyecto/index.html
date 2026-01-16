@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML y CSS con todos los elementos">
+    <meta name="keywords" content="HTML, CSS, formularios, tablas, listas, enlaces, imágenes">
+    <meta name="author" content="Cristian">
+    <title>Índice</title>
+</head>
+<style>
+    /*Para ocultar el checkbox del menu oculto vertical*/
+    #menu-toggle {
+        display: none;
+    }
+    /*Menú Horizontal*/
+    .menu-horizontal {
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Imagen*/
+    .menu-top-image img {
+        width: 200px; 
+    }
+    /*Botón*/
+    .menu-btn {
+        font-size: 28px;
+        cursor: pointer;
+        color: black;
+        align-self: flex-start; 
+    }
+
+    .menu-links {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .menu-links a {
+        color: black;
+        text-decoration: none;
+        margin: 0 20px;
+        padding: 10px 0;
+    }
+    /*Menú Vertical*/
+    .menu-vertical {
+        position: fixed;
+        top: 50px;
+        left: -200px;
+        width: 200px;
+        height: 100%;
+        background-color: lightgoldenrodyellow;
+        transition: left 0.3s ease;
+    }
+
+    .menu-vertical a {
+        display: block;
+        padding: 15px;
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid #555;
+    }
+    /*Al pasar por encima*/
+    .menu-vertical a:hover {
+        background-color: lightblue;
+    }
+    /*Para poder abrir y cerrar el menu vertical*/
+    #menu-toggle:checked ~ .menu-vertical {
+        left: 0;
+    }
+    /*Coleres encabezados y decoración*/
+    h1 {
+    text-align: center;
+    color: #333;
+    text-decoration: underline;
+   }
+
+  h2 {
+    text-decoration: underline;
+  }
+  .news-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  /*Las cartas de noticias*/
+  .news-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .news-card img {
+    width: 550px;
+    height: 250px;
+  }
+
+  .news-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1; 
+  }
+
+  .news-card-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #00a2a2;
+  }
+
+  .news-card-content p {
+    margin: 0 0 10px 0;
+    color: #555;
+  }
+
+  .news-card-content a {
+    text-decoration: none;
+    color: white;
+    background-color: #00a2a2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 120px;
+    transition: background-color 0.3s;
+    width: 950px;
+  }
+
+  .news-card-content a:hover {
+    background-color: #007272;
+  }
+  p {
+    font-weight: bold;
+  }
+
+</style>
+<body>
+    <!--Botón-->
+    <input type="checkbox" id="menu-toggle">
+    <!--Menú Horizontal-->
+    <div class="menu-horizontal">
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <!--Imagen de portada-->
+        <div class="menu-top-image">
+            <img src="fotos/Portada.png" alt="Logo" width="200" usemap="#mapa-logo" />
+        </div>
+        <!--El map-->
+        <map name="mapa-logo">
+            <area shape="rect" coords="0,0,100,150" href="detalles.html" title="Parte izquierda del logo">
+            <area shape="rect" coords="100,0,200,150" href="historia.html" title="Parte derecha del logo">
+        </map>
+        <!--El menú Horizontal-->
+        <div class="menu-links">
+            <a href="#">Inicio</a>
+            <a href="clasificacion.html">Clasificación</a>
+            <a href="resultado.html">Resultados</a>
+            <a href="formulario.html">Formulario</a>
+        </div>
+    </div>
+    <!--Menú Vertical-->
+    <nav class="menu-vertical">
+        <li><a href="ligas.html">Ligas</a></li>
+        <li><a href="deportes.html">Deportes</a></li>
+        <li><a href="ultimaHora.html">Última Hora</a></li>
+        <li><a href="mercado.html">Mercado</a></li>
+    </nav>
+    <!--El contenedor de las noticias, con las noticias-->
+    <h1>Noticias Fútbol</h1>   
+    <div class="news-container">
+
+        <div class="news-card">
+            <img src="fotos/fichaje.jpg" alt="Fichaje sorpresa">
+            <div class="news-card-content">
+            <h2>El club prepara un fichaje sorpresa para el mercado</h2>
+            <p>La directiva trabaja en secreto para cerrar un fichaje inesperado que podría reforzar 
+                significativamente la plantilla. Aunque todavía no hay detalles oficiales, las negociaciones 
+                avanzan discretamente y se espera que el anuncio se haga pronto. Este refuerzo busca aportar 
+                experiencia y calidad en una posición clave, generando ilusión entre los aficionados y motivando 
+                al equipo de cara a los próximos partidos.</p>
+            <a href="noticias/noticia1.html">Leer más</a>
+            </div>
+        </div><br>
+
+        <div class="news-card">
+            <img src="fotos/ruedadeprensa.jpg" alt="Entrenador rueda de prensa">
+            <div class="news-card-content">
+            <h2>El entrenador estalla en rueda de prensa tras el empate</h2>
+            <p>El técnico no se mordió la lengua y dejó varias frases contundentes tras el partido.
+            Tras el empate en el último partido, el entrenador mostró su descontento en rueda de prensa 
+                con declaraciones contundentes sobre el rendimiento del equipo. Sus palabras han generado debate 
+                y podrían influir en la alineación para el próximo encuentro.</p>
+            <a href="noticias/noticia2.html">Leer más</a>
+            </div>
+        </div><br>
+
+        <div class="news-card">
+            <img src="fotos/lesion.jpg" alt="Jugador lesionado">
+            <div class="news-card-content">
+            <h2>Lesión inesperada a pocos días del partido clave</h2>
+            <p>El futbolista tuvo que abandonar el entrenamiento y es duda para el próximo partido.
+                Un jugador clave sufrió una lesión durante el entrenamiento y su participación en el próximo partido está en duda. 
+                El cuerpo médico trabajará para recuperarlo a tiempo, aunque aún se desconoce la gravedad exacta de la lesión.</p>
+            <a href="noticias/noticia3.html">Leer más</a>
+            </div>
+        </div><br>
+
+        <div class="news-card">
+            <img src="fotos/cantera.jpg" alt="Jugador joven celebrando">
+            <div class="news-card-content">
+            <h2>La joya de la cantera deslumbra y pide sitio en el primer equipo</h2>
+            <p>El canterano fue el gran protagonista del último encuentro.
+            El joven jugador de la cantera brilló en el último encuentro, destacando por su velocidad y técnica. 
+            Su actuación ha llamado la atención del entrenador y podría ganar más protagonismo en el primer equipo, 
+            generando ilusión entre la afición.</p>
+            <a href="noticias/noticia4.html">Leer más</a>
+            </div>
+        </div><br>
+    </div>
+</body>
+</html>

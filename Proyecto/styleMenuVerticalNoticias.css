@@ -1,0 +1,61 @@
+  /*Estilo de algunas diferentes páginas*/
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #00a2a2;
+    margin-bottom: 30px;
+  }
+
+  .bloque {
+    background: white;
+    margin-bottom: 30px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+
+  .bloque h2 {
+    margin: 0 0 15px;
+    border-bottom: 2px solid #00a2a2;
+    padding-bottom: 5px;
+  }
+
+  .item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .item:last-child {
+    border-bottom: none;
+  }
+
+  .titulo {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .descripcion {
+    color: #555;
+    font-size: 14px;
+  }
+
+  .back-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00a2a2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 1450px;
+    text-align: center;
+  }
+
+  .back-button:hover {
+    background-color: #007272;
+  }
